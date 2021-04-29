@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <style>
+        
+        
+        #animation img {
+            display: none;
+            height: 200px;
+            width: 200px;
+        }
+
+        #animation img:first-child {
+            display:inline-block;
+        }
+
+        #myCanvas{
+			background-image: url(images/background.jpg);
+			background-size: cover;
+            width: 1000px;
+            height: 500px;
+        }
+        #container {
+            position: absolute;
+            }
+            #container canvas, #animation {
+            position: absolute;
+            }
+            canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h4 style="margin-left: 20%;">
+        - Press S to Punch || - Press W to Kick || - Press D to Move forward || - Press A to Move backward    <br>
+        <br>
+        Hit the Monster using 'Punch' & 'Kick' by going near to that.
+        <br>
+    </h4>
+    <audio autoplay>
+        <source src="audio/background_audio.mp3" type="audio/mpeg">
+    </audio>
+    <div id="container">
+        <canvas id="myCanvas"></canvas>
+        <div id="animation" style="margin-top: 300px;">
+        </div>
+      </div>
+      <script src="helper.js"></script>
+</body>
+
+</html>
